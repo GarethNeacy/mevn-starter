@@ -1,4 +1,4 @@
-# spartify
+# Startup
 
 ## Project setup
 ```

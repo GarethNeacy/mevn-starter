@@ -10,11 +10,11 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 5000;
 
 // Routes
-const rooms = require('./api/routes/rooms');
-app.use('/api/rooms', rooms);
+const foos = require('./api/routes/foo.router');
+app.use('/api/foo', foos);
 
 // prod
-if (process.env.NODE_ENV === 'production'){
+if (process.env.NODE_ENV === 'production') {
   // static
   app.use(express.static(__dirname + '/public/'));
   // handle SPA
